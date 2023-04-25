@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  lavalink:
+    build:
+      context: .
+    ports:
+      - '2333:2333'
+    volumes:
+      - './application.yml:/lavalink-musl/application.yml'
